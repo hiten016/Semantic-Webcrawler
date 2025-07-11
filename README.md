@@ -1,4 +1,17 @@
-# Reddit-Semantic-Crawler
-This project crawls Reddit posts from a selected subreddit and performs semantic similarity analysis using a combination of Sentence-BERT for text embedding and FAISS for fast similarity search.
+🕸️ Reddit Semantic Crawler
+A semantic crawler and analyzer for Reddit that uses Sentence-BERT and FAISS to discover similar or coordinated posts in a given subreddit. This tool is ideal for research, community monitoring, or content clustering on Reddit.
 
-We use the PRAW API to fetch Reddit posts, encode them using the  Sentence-BERT model, and build a FAISS index to find and compare semantically similar posts efficiently. This helps in uncovering related discussions, coordinated content, or topic clustering within Reddit.
+ Key Features
+ Crawl posts from any public subreddit using PRAW
+ Generate high-dimensional embeddings using Sentence-BERT
+ Build and query FAISS index for fast semantic similarity search
+ Analyze coordinated content or topic clusters in Reddit posts
+ Modular design for easy integration into research or moderation pipelines
+
+⚙ Tech Stack
+Layer	Tools / Libraries
+Reddit API	PRAW
+Embeddings	Sentence-BERT (via sentence-transformers)
+Vector DB	FAISS
+Backend	Python, Pandas
+Visualization	Matplotlib / Seaborn (optional)
